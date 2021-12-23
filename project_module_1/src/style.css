@@ -1,0 +1,123 @@
+html {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+h1 {
+    color: rgb(34, 20, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* Accredited to https://www.digitalocean.com/community/tutorials/css-css-grid-layout-fr-unit */
+#container {
+    height: 300px;
+    width: 550px;
+    background-color: #dadada;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: 10px 1fr 1fr 1fr;
+    margin: 0 auto;
+    border: 5px solid #5dadee;
+}
+
+#weightInput{
+    height: 25px;
+    width: 200px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
+}
+#wlabel {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+#heightInput{
+    height: 25px;
+    width: 200px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    align-self: center;
+}
+#hlabel {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+#bmi-output {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    align-self: center;
+    font-size: 40px;
+}
+#bmilabel {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+#button1 { /*Calculate button*/
+    height: 25px;
+    width: 75px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
+    background-color: #5dadee;
+    color: #ffffff;
+}
+
+#button2 { /*Reset button*/
+    height: 25px;
+    width: 75px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
+    background-color: #5dadee;
+    color: #ffffff;
+}
+
+
+#commentArea{
+    height: 150px;
+    width: 550px;
+    background-color: #dadada;
+    margin: 0 auto;
+    border: 5px solid #5dadee;
+}
+
+#table {
+    height: 100px;
+    width: 550px;
+    background-color: #dadada;
+    margin: 0 auto;
+    border: 5px solid #5dadee;
+}
+
+table, th, td {
+    margin: auto;
+    
+    text-align: center;
+    border: 1px solid black;
+    color: #161616;
+}
